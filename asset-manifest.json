@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_movieDiscoverReviewApp/static/css/main.a9776159.css",
+    "main.js": "/react_movieDiscoverReviewApp/static/js/main.38096b24.js",
+    "static/js/787.7c42db31.chunk.js": "/react_movieDiscoverReviewApp/static/js/787.7c42db31.chunk.js",
+    "index.html": "/react_movieDiscoverReviewApp/index.html",
+    "main.a9776159.css.map": "/react_movieDiscoverReviewApp/static/css/main.a9776159.css.map",
+    "main.38096b24.js.map": "/react_movieDiscoverReviewApp/static/js/main.38096b24.js.map",
+    "787.7c42db31.chunk.js.map": "/react_movieDiscoverReviewApp/static/js/787.7c42db31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9776159.css",
+    "static/js/main.38096b24.js"
+  ]
+}
