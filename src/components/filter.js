@@ -15,7 +15,7 @@ movie.genre_ids.includes(activeGenre)
 
 setFiltered(filtered);
 
-}, [activeGenre]);
+}, [activeGenre, popular, setFiltered]);
 
 
 
@@ -29,7 +29,16 @@ setFiltered(filtered);
     
     <button className={activeGenre === 28 ? "active" : "" }
      onClick={() => setActiveGenre(28)}>Action</button>
-        
+
+     <button className={activeGenre === 16 ? "active" : "" }
+     onClick={() => setActiveGenre(16)}>Animation</button>
+
+    <button className={activeGenre === 27 ? "active" : "" }
+     onClick={() => setActiveGenre(27)}>Horror</button>
+
+    <button className={activeGenre === 878 ? "active" : "" }
+     onClick={() => setActiveGenre(878)}>Sci-Fi</button>
+
     </div>
   );
 }

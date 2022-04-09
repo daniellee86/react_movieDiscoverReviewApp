@@ -1,21 +1,32 @@
 import { motion } from "framer-motion";
-// import popUp from './des-popup'
+import styled from "styled-components";
+ import Modal from "./Modal";
 
+ const IconContainer = styled.div`
+  margin: 5px 10px;
+ `
 
  function MovieContainer({movie}) {
-    const description = () => {
-        alert(movie.title + "     " +movie.overview)}
+    
   return (
-    < motion.div layout className='movieCard'>
+    <motion.div layout transition={{duration: 0.75}} >
 
-        <h2 className='cardTitle'>{movie.title}</h2>
-     
-       <img src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} alt="" />
-        {/* <p>{movie.overview}</p> */}
-     
-       <button className='cardButton' onClick={description}>Description</button>
-     
+    <div className='movieCard'>
+       <img src={"https://image.tmdb.org/t/p/w780" + movie.backdrop_path} alt="" />
+
+       <div class="cardInfo">
+       <h1 className='cardTitle'>{movie.title}</h1>
+       <p className="cardDesc">{movie.overview.substring(0,100)}...</p>
+       </div>
+     </div>
+     <IconContainer>
+     <Modal movie={movie}/>
+     </IconContainer>
+   
+
     </motion.div>
+
+   
   )
 }
 export default MovieContainer
