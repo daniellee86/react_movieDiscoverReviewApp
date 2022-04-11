@@ -65,6 +65,14 @@ const ButtonClose = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    border-radius: 50%;
+    border: none;
+    cursor:pointer;
+    transition: transform .5s;
+    &:hover{ 
+    color: red;
+    transform: scale(1.1);
+    }
 `
 
 const ModalTitle = styled.h1`
@@ -109,7 +117,7 @@ const Modal = ({movie}) => {
             <ModalContent>
                 <ModalTitle>{movie.title}</ModalTitle>
                 <ModalDesc>{movie.overview}</ModalDesc>
-                <ButtonClose onClick={toggleModal} className='close-model'>close</ButtonClose>
+                <ButtonClose onClick={toggleModal} className='close-model'>X</ButtonClose>
             </ModalContent>
 
             </Overlay>

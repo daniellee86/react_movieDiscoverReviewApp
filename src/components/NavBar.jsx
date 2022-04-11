@@ -10,7 +10,7 @@ function Navigation() {
            <h1 className='netPicks'>NETPICKS</h1>
             <ul className='list'>
               <li className='listItem'>
-                 <Link className='link' to="/Home">Home</Link>
+                 <Link className='link' to="/">Home</Link>
               </li>  
               <li className='listItem'>
               <Link className='link' to="/Movies">Movies</Link>

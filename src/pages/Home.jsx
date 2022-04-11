@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import Newsletter from "../components/Newsletter"
+import Footer from "../components/Footer"
 
 const Image = styled.img`
 height: 100%;
@@ -30,7 +32,7 @@ const InfoBottom = styled.h2`
 font-size: 20px;
 font-weight: 200;
 text-align: center;
-color: red;
+color: white;
 text-transform: uppercase;
 background-color: black;
 border-radius: 5px;
@@ -41,15 +43,18 @@ padding: 5px;
 
 const Home = () => {
   return (
+    <>
     <div className="placeHolder">
     <Image src="https://images.pexels.com/photos/7234276/pexels-photo-7234276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
     <Info>
     <InfoTop>Discover new movies.<br/>Create your watchlist.<br/>Review your favourites.</InfoTop>
      <InfoBottom>All the content. All the time.</InfoBottom>
     </Info>
-      
-    </div>    
-        
+    </div>
+
+    <Newsletter/>  
+    <Footer/>
+    </>
   )
 }
 

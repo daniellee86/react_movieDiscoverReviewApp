@@ -41,6 +41,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding-left: 20px;
+background-color: red;
 `
 
 const Image = styled.img`
@@ -69,6 +70,7 @@ font-weight: 200;
 const Overview = styled.p`
 color: white;
 font-size: 1rem;
+
 `
 
 

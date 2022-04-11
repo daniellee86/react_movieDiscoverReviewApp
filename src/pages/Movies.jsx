@@ -6,6 +6,7 @@ import MovieContainer from '../components/MovieContainer';
 import Filter from '../components/Filter';
 import Search from '../components/Search';
 import Featured from '../components/Featured'
+import Footer from '../components/Footer';
 
 const FilterContainer = styled.div`
 display: flex;
@@ -55,6 +56,8 @@ const Movies = () => {
        return <MovieContainer key={movie.id} movie={movie} />
      })}
     </motion.div>
+
+    <Footer/>
 
     </div>
   )
