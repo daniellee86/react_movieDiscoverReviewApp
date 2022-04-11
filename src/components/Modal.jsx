@@ -58,6 +58,7 @@ const ModalContent = styled.div`
     min-width: 400px;
     min-height: 300px;
     z-index: 4;
+    filter: grayscale(50%)
 `
 
 const ButtonClose = styled.button`

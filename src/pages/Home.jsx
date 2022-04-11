@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Categories from "../components/Categories"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
 
@@ -52,6 +53,7 @@ const Home = () => {
     </Info>
     </div>
 
+    <Categories/>
     <Newsletter/>  
     <Footer/>
     </>
