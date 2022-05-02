@@ -10,7 +10,7 @@ function Navigation() {
            <h1 className='netPicks'>NETPICKS</h1>
             <ul className='list'>
               <li className='listItem'>
-                 <NavLink className='link' to="/">Home</NavLink>
+                 <NavLink className='link' to="/react_movieDiscoverReviewApp/">Home</NavLink>
               </li>  
               <li className='listItem'>
               <NavLink className='link' to="/Movies">Movies</NavLink>
