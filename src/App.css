@@ -28,7 +28,6 @@ h1 {
     justify-content: center;
     color: white;
     position: relative;
-
 }
 
 /* NAVBAR  */
@@ -64,7 +63,6 @@ padding: 1% 10% 1% 1%;
 }
 
 
-
 .link {
     font-size: 1.2rem;
     list-style-type: none;
@@ -73,9 +71,13 @@ padding: 1% 10% 1% 1%;
     margin: 0 20px 0 20px; 
 }
 
+.link.active{
+color: red
+}
+
 .catLink{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 
@@ -102,7 +104,7 @@ cursor:pointer;
 .bg{
     height: auto;
     width: auto;
-    background-color: #111111;
+    background-color: black;
     
 }
 
@@ -131,6 +133,13 @@ border: 3px solid #fff;
 border-radius: 20px;
 overflow: hidden;
 position: relative;
+padding: 0.5em;
+box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 0.6rem #FF5733 ,
+              0 0 0.3rem #FF5733 ,
+              0 0 1.3rem #FF5733 ,
+              inset 0 0 0.8rem #FF5733 ;
 
 }
 
@@ -139,6 +148,7 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    border: solid 2px black;
 }
 
 .cardInfo{
@@ -182,3 +192,26 @@ button.active {
     background: red;
     color: white;
 }
+
+
+/* MODAL ANIMATION */
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow:
+              0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #FF5733 ,
+              0 0 0.8rem #FF5733 ,
+              0 0 2.8rem #FF5733 ,
+             inset 0 0 1.3rem #FF5733
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+  }
+
+
+  

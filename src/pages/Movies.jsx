@@ -15,11 +15,18 @@ justify-content: space-between;
  margin: 3% 10% 3% 10%;
 `
 
+const Title = styled.h1`
+margin: 3% 0 1% 10%;
+font-weight: 400;
+letter-spacing: 2px;
+`
+
 const Movies = () => {
     const [popular, setPopular] = useState([])
     const [filtered, setFiltered] = useState([])
     const [featured, setFeatured] = useState([])
     const [query, setQuery] = useState("");
+    const [title, setTitle] = useState("");
     const [activeGenre, setActiveGenre] = useState(0)
 
     useEffect (() => {
@@ -29,7 +36,6 @@ const Movies = () => {
         setPopular(movies.results)
         setFiltered(movies.results)
         setFeatured(movies.results.splice(Math.floor(Math.random()*movies.results.length),1))  
-        
         }
 
       fetchPopular()
@@ -45,12 +51,15 @@ const Movies = () => {
      })}
 
     <FilterContainer>
-    <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre} />
+    <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre}  setTitle={setTitle} />
     <Search setQuery={setQuery}/>
     </FilterContainer>
+
+   
+    <Title>{title}</Title>
    
 
-    <motion.div layout transition={{duration: 0.75}} className='movieWrapper'>
+    <motion.div layout transition={{duration: 0.5}} className='movieWrapper'>
      { filtered.filter(movie => movie.title.toLowerCase().includes(query)
      ).map((movie) => {
        return <MovieContainer key={movie.id} movie={movie} />

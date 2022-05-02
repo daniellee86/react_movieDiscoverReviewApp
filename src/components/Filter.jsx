@@ -2,13 +2,35 @@ import { useEffect } from "react";
 
 
 
-function Filter({setActiveGenre, activeGenre, setFiltered, popular}) {
+function Filter({setActiveGenre, activeGenre, setFiltered, popular, setTitle}) {
 
 useEffect(() => {
+
+  switch (activeGenre) {
+    case 0:
+      setTitle("All");
+      break;
+    case 35:
+      setTitle("Comedy");
+      break;
+    case 28:
+      setTitle("Action");
+      break;
+    case 16:
+      setTitle("Animation");
+      break;
+    case 27:
+      setTitle("Horror");
+      break;
+    case 878:
+      setTitle("Sci-Fi");
+      break;
+  }
+
 if(activeGenre === 0){
     setFiltered(popular);
     return;
-}
+} 
 const filtered = popular.filter((movie) => 
 movie.genre_ids.includes(activeGenre) 
 );

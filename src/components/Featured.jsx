@@ -41,7 +41,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding-left: 20px;
-background-color: red;
+color: white;
 `
 
 const Image = styled.img`
@@ -52,10 +52,10 @@ margin: 0;
 border-radius: 0px ;
 `
 const Name = styled.h1`
-  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
+  text-align: center;
   
 `
 const Title = styled.h2`
@@ -68,9 +68,21 @@ font-weight: 200;
 `
 
 const Overview = styled.p`
-color: white;
 font-size: 1rem;
+font-weight: 200;
+margin: 10px;
+`
 
+const Date = styled.p`
+font-size: 0.8rem;
+font-weight: 200;
+margin: 5px;
+`
+
+const Rating = styled.p`
+font-size: 0.8rem;
+font-weight: 200;
+margin: 5px;
 `
 
 
@@ -90,6 +102,8 @@ const Featured = ({movie}) => {
        <Desc>
        <Name>{movie.title}</Name>
        <Overview>{movie.overview.substring(0,350)}</Overview>
+       <Date>Release Date: {movie.release_date}</Date>
+       <Rating>Average Rating: {movie.vote_average}</Rating>
        </Desc>
     
     

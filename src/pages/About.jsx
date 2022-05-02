@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 

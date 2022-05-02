@@ -33,7 +33,7 @@ import styled from "styled-components";
  function MovieContainer({movie}) {
     
   return (
-    <motion.div layout transition={{duration: 0.75}} >
+    <motion.div layout transition={{duration: 0.5}} >
 
     <div className='movieCard'>
        <img src={"https://image.tmdb.org/t/p/w780" + movie.backdrop_path} alt="" />

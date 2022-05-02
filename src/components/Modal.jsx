@@ -44,21 +44,28 @@ const Overlay = styled.div`
 
 const ModalContent = styled.div`
   position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     line-height: 1.4;
     color: white;
-    background-image: url("https://images.pexels.com/photos/2251206/pexels-photo-2251206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: black;
     padding: 14px 28px;
-    border-radius: 3px;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
     max-width: 800px;
     min-width: 400px;
     min-height: 300px;
     z-index: 4;
-    filter: grayscale(50%)
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #FF5733 ,
+              0 0 0.8rem #FF5733 ,
+              0 0 2.8rem #FF5733 ,
+              inset 0 0 1.3rem #FF5733 ;
+
+  animation: flicker 1.5s infinite alternate;  
+    
 `
 
 const ButtonClose = styled.button`
@@ -78,11 +85,25 @@ const ButtonClose = styled.button`
 
 const ModalTitle = styled.h1`
 font-size: 40px;
+text-align: center;
 `
 const ModalDesc = styled.p`
 font-size: 20px;
-backdrop-filter: blur(7px);
+
 `
+
+const Date = styled.p`
+font-size: 15px;
+font-weight: 200;
+
+`
+
+const Rating = styled.p`
+font-size: 15px;
+font-weight: 200;
+
+`
+
 
 
 
@@ -118,6 +139,8 @@ const Modal = ({movie}) => {
             <ModalContent>
                 <ModalTitle>{movie.title}</ModalTitle>
                 <ModalDesc>{movie.overview}</ModalDesc>
+                <Date>Release Date: {movie.release_date}</Date>
+               <Rating>Average Rating: {movie.vote_average}</Rating>
                 <ButtonClose onClick={toggleModal} className='close-model'>X</ButtonClose>
             </ModalContent>
 

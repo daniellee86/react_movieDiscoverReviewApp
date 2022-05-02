@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 function Navigation() {
@@ -10,13 +10,13 @@ function Navigation() {
            <h1 className='netPicks'>NETPICKS</h1>
             <ul className='list'>
               <li className='listItem'>
-                 <Link className='link' to="/">Home</Link>
+                 <NavLink className='link' to="/">Home</NavLink>
               </li>  
               <li className='listItem'>
-              <Link className='link' to="/Movies">Movies</Link>
+              <NavLink className='link' to="/Movies">Movies</NavLink>
               </li>   
               <li >
-              <Link className='link' to="/About">About</Link>
+              <NavLink className='link' to="/About">About</NavLink>
               </li>   
           </ul>
 
