@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/react_movieDiscoverReviewApp/static/css/main.7973c4db.css",
-    "main.js": "/react_movieDiscoverReviewApp/static/js/main.ddfded5d.js",
-    "static/js/787.7c42db31.chunk.js": "/react_movieDiscoverReviewApp/static/js/787.7c42db31.chunk.js",
+    "main.css": "/react_movieDiscoverReviewApp/static/css/main.6cd4b454.css",
+    "main.js": "/react_movieDiscoverReviewApp/static/js/main.d28568da.js",
     "index.html": "/react_movieDiscoverReviewApp/index.html",
-    "main.7973c4db.css.map": "/react_movieDiscoverReviewApp/static/css/main.7973c4db.css.map",
-    "main.ddfded5d.js.map": "/react_movieDiscoverReviewApp/static/js/main.ddfded5d.js.map",
-    "787.7c42db31.chunk.js.map": "/react_movieDiscoverReviewApp/static/js/787.7c42db31.chunk.js.map"
+    "main.6cd4b454.css.map": "/react_movieDiscoverReviewApp/static/css/main.6cd4b454.css.map",
+    "main.d28568da.js.map": "/react_movieDiscoverReviewApp/static/js/main.d28568da.js.map"
   },
   "entrypoints": [
-    "static/css/main.7973c4db.css",
-    "static/js/main.ddfded5d.js"
+    "static/css/main.6cd4b454.css",
+    "static/js/main.d28568da.js"
   ]
 }
