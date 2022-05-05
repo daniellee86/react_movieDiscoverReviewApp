@@ -1,13 +1,14 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom';
-// import { mobile } from "../responsive";
-// ${mobile({ padding: "0px", flexDirection:"column" })}
+import { mobile, tablet } from "../responsive";
+
 
 const Container = styled.div`
 display: flex;
 justify-content: space-between;
 padding: 10px;
 background: black;
+${mobile({ padding: "0px", flexDirection:"column" })}
 `
 const Wrapper = styled.div`
 flex: 1;

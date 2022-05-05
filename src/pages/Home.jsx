@@ -2,6 +2,10 @@ import styled from "styled-components"
 import Categories from "../components/Categories"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
+import {mobile, tablet} from "../responsive"
+
+
+// ${tablet({ height: "75px" })}
 
 const Image = styled.img`
 height: 100%;
@@ -28,10 +32,12 @@ text-shadow: -3px 2px  #282828,
       letter-spacing: 6px;
 
 margin-bottom: 20px;
+${mobile({ fontSize: "40px" })}
 `
 
 const Desc = styled.p`
 font-size: 20px
+${mobile({ fontSize: "15px" })}
 `
 
 const InfoBottom = styled.h2`
@@ -45,6 +51,7 @@ width: 25%;
 padding: 5px;
 border: solid 1px white;
 margin: 0px;
+${mobile({ display: "none" })}
 `
 
 const Home = () => {

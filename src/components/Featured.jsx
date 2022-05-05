@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import {mobile, tablet} from "../responsive"
 
 const Container = styled.div`
 height: 40vh;
 width: auto;
 margin: 0 10% 0 10%;
 border: solid 1px white;
+${mobile({ display: "none" })}
 `
 const Wrapper = styled.div`
 height: 100%;

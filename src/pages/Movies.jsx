@@ -8,11 +8,17 @@ import Search from '../components/Search';
 import Featured from '../components/Featured'
 import Footer from '../components/Footer';
 
+import {mobile, tablet} from "../responsive"
+
 const FilterContainer = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
- margin: 3% 10% 3% 10%;
+margin: 3% 10% 3% 10%;
+${mobile({ 
+  margin:"0",
+  flexDirection: "column" })}
+
 `
 
 const Title = styled.h1`

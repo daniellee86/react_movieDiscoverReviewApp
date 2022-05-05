@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import styled from "styled-components"
 import {SearchOutlined} from "@material-ui/icons";
+import {mobile, tablet} from "../responsive"
 
 const ButtonOpen = styled.button`
     padding: 2px ;
@@ -28,6 +29,7 @@ const ModalMain = styled.div`
     bottom: 0;
     position: fixed;
     z-index: 2;
+
 `
 
 const Overlay = styled.div`
@@ -65,6 +67,10 @@ const ModalContent = styled.div`
               inset 0 0 1.3rem #FF5733 ;
 
   animation: flicker 1.5s infinite alternate;  
+
+  ${mobile({ 
+        height: "50vh"
+        })}
     
 `
 
@@ -86,21 +92,23 @@ const ButtonClose = styled.button`
 const ModalTitle = styled.h1`
 font-size: 40px;
 text-align: center;
+${mobile({ fontSize: "20px" })}
 `
 const ModalDesc = styled.p`
 font-size: 20px;
-
+${mobile({ fontSize: "15px" })}
 `
 
 const Date = styled.p`
 font-size: 15px;
 font-weight: 200;
-
+${mobile({ fontSize: "10px" })}
 `
 
 const Rating = styled.p`
 font-size: 15px;
 font-weight: 200;
+${mobile({ fontSize: "10px" })}
 
 `
 
