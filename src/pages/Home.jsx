@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import {mobile, tablet} from "../responsive"
 
 
-// ${tablet({ height: "75px" })}
+
 
 const Image = styled.img`
 height: 100%;
@@ -52,6 +52,7 @@ padding: 5px;
 border: solid 1px white;
 margin: 0px;
 ${mobile({ display: "none" })}
+${tablet({ display: "none" })}
 `
 
 const Home = () => {

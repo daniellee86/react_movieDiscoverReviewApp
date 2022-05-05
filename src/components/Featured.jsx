@@ -44,6 +44,7 @@ flex-direction: column;
 justify-content: center;
 padding-left: 20px;
 color: white;
+
 `
 
 const Image = styled.img`
@@ -58,6 +59,7 @@ const Name = styled.h1`
   font-weight: bold;
   margin: 0;
   text-align: center;
+  ${tablet({ fontSize: "1rem" })}
   
 `
 const Title = styled.h2`
@@ -67,24 +69,28 @@ font-weight: 200;
   /* opacity: 0.5; */
   margin: 0;
   border-top: solid 2px black;
+  ${tablet({ fontSize: "2rem" })}
 `
 
 const Overview = styled.p`
 font-size: 1rem;
 font-weight: 200;
 margin: 10px;
+${tablet({ fontSize: "0.6rem" })}
 `
 
 const Date = styled.p`
 font-size: 0.8rem;
 font-weight: 200;
 margin: 5px;
+${tablet({ fontSize: "0.4rem" })}
 `
 
 const Rating = styled.p`
 font-size: 0.8rem;
 font-weight: 200;
 margin: 5px;
+${tablet({ fontSize: "0.4rem" })}
 `
 
 

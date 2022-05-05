@@ -18,7 +18,8 @@ margin: 3% 10% 3% 10%;
 ${mobile({ 
   margin:"0",
   flexDirection: "column" })}
-
+  
+  ${tablet({ flexDirection: "column" })}
 `
 
 const Title = styled.h1`

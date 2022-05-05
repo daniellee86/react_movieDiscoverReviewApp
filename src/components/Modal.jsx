@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import styled from "styled-components"
 import {SearchOutlined} from "@material-ui/icons";
-import {mobile, tablet} from "../responsive"
+import {mobile} from "../responsive"
 
 const ButtonOpen = styled.button`
     padding: 2px ;
@@ -111,11 +111,6 @@ font-weight: 200;
 ${mobile({ fontSize: "10px" })}
 
 `
-
-
-
-
-
 
 
 const Modal = ({movie}) => {

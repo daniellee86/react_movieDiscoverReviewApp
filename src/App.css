@@ -250,3 +250,12 @@ button.active {
       } 
 
   }
+
+  @media only screen and (max-width: 820px) {
+    .filterContainer button{
+        margin-right: 1rem;
+        min-width: 5rem;
+        padding: 0.5rem 1rem;
+      } 
+    }
+    
