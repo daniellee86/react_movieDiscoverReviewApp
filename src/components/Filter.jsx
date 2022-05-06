@@ -25,6 +25,9 @@ useEffect(() => {
     case 878:
       setTitle("Sci-Fi");
       break;
+    default:
+      setTitle("All");
+      break;
   }
 
 if(activeGenre === 0){
@@ -37,7 +40,7 @@ movie.genre_ids.includes(activeGenre)
 
 setFiltered(filtered);
 
-}, [activeGenre, popular, setFiltered]);
+}, [activeGenre, popular, setFiltered, setTitle]);
 
 
 

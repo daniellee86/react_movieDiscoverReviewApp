@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import styled from "styled-components"
 import {SearchOutlined} from "@material-ui/icons";
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 
 const ButtonOpen = styled.button`
     padding: 2px ;
@@ -71,6 +71,11 @@ const ModalContent = styled.div`
   ${mobile({ 
         height: "50vh"
         })}
+
+   
+  ${tablet({ 
+        height: "70vh"
+        })}     
     
 `
 
@@ -93,10 +98,12 @@ const ModalTitle = styled.h1`
 font-size: 40px;
 text-align: center;
 ${mobile({ fontSize: "20px" })}
+${tablet({ fontSize: "30px" })}
 `
 const ModalDesc = styled.p`
 font-size: 20px;
 ${mobile({ fontSize: "15px" })}
+${tablet({ fontSize: "15px" })}
 `
 
 const Date = styled.p`
